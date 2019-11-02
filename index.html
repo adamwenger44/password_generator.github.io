@@ -21,14 +21,15 @@
 <body>
     <div class="jumbotron">
         <h1 class="display-4">Generate a Password</h1>
-        <div id="display">
-            <p>
+
+        <textarea rows="4" cols="180" id="display">
                 Your Secure Password
-            </p>
-        </div>
+            </textarea>
+
         <button id="myBtn"> Generate Password </button>
-        <buttton id="copy">copy to clipboard</buttton>
+        <button onclick="clip()" id="copy">copy to clipboard</button>
     </div>
+    onload="generate()">
 </body>
 <script src="./script.js"></script>
 
